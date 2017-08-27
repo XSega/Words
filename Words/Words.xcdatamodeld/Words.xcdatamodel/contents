@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AlternativeData" representedClassName="AlternativeData" syncable="YES">
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <attribute name="translate" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MeaningData" representedClassName="MeaningData" syncable="YES">
+        <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="sound" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <attribute name="translation" attributeType="String" syncable="YES"/>
+        <relationship name="alternatives" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="AlternativeData" syncable="YES"/>
+    </entity>
+    <entity name="UserWordData" representedClassName="UserWordData" syncable="YES">
+        <attribute name="identifier" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="progress" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AlternativeData" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="MeaningData" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="UserWordData" positionX="45" positionY="45" width="128" height="75"/>
+    </elements>
+</model>

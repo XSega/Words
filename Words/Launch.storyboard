@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jv1-TO-KxW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch App View Controller-->
+        <scene sceneID="wAM-eO-Xe0">
+            <objects>
+                <viewController storyboardIdentifier="LaunchAppViewController" id="Jv1-TO-KxW" customClass="LaunchAppViewController" customModule="Words" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XUM-aA-lhh"/>
+                        <viewControllerLayoutGuide type="bottom" id="QlF-PF-bIh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YZb-wJ-Izd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PB-64-pGD">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.76078431369999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="TO3-7N-O6V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Resign">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resignAction:" destination="Jv1-TO-KxW" eventType="touchUpInside" id="eYV-8K-GwI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Words Trainings" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfz-ea-J9O">
+                                <rect key="frame" x="16" y="28" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="DLO-6T-xFA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.61176470589999998" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gfz-ea-J9O" firstAttribute="trailing" secondItem="YZb-wJ-Izd" secondAttribute="trailingMargin" id="2DG-aL-koI"/>
+                            <constraint firstAttribute="trailing" secondItem="6PB-64-pGD" secondAttribute="trailing" id="TGg-iw-tfm"/>
+                            <constraint firstItem="6PB-64-pGD" firstAttribute="leading" secondItem="YZb-wJ-Izd" secondAttribute="leading" id="ZcD-bm-rBw"/>
+                            <constraint firstItem="Gfz-ea-J9O" firstAttribute="top" secondItem="XUM-aA-lhh" secondAttribute="bottom" constant="8" id="ezy-Zh-Xah"/>
+                            <constraint firstItem="QlF-PF-bIh" firstAttribute="top" secondItem="6PB-64-pGD" secondAttribute="bottom" id="fBR-bF-SWp"/>
+                            <constraint firstItem="Gfz-ea-J9O" firstAttribute="leading" secondItem="YZb-wJ-Izd" secondAttribute="leadingMargin" id="nWE-fX-5uQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resignButton" destination="6PB-64-pGD" id="7WX-tj-6hw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4h-lb-ehS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2575.1999999999998" y="850.52473763118451"/>
+        </scene>
+    </scenes>
+</document>
