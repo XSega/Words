@@ -12,6 +12,7 @@ protocol IListeningTrainingInteractor {
     func start()
     func checkTranslation(text: String?)
     func skipMeaning()
+    func listenAgain()
 }
 
 class ListeningTrainingInteractor: IListeningTrainingInteractor, ITrainingDataStore {
@@ -57,6 +58,11 @@ class ListeningTrainingInteractor: IListeningTrainingInteractor, ITrainingDataSt
         } else {
             didWrongSelection(meaning: meaning, wrongText: text)
         }
+    }
+    
+    func listenAgain() {
+        let meaning = meanings[currentMeaningIndex]
+        presenter.presentMeaningSound(meaning: meaning)
     }
     
     func skipMeaning(){

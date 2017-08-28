@@ -13,7 +13,7 @@ protocol IListeningTrainingPresenter {
     func presentCorrectAlert(meaning: Meaning)
     func presentWrongAlert(meaning: Meaning, wrongText: String)
     func presentSkipAlert(meaning: Meaning)
-    
+    func presentMeaningSound(meaning: Meaning)
     func presentFinish()
 }
 
@@ -45,6 +45,12 @@ class ListeningTrainingPresenter: TrainingPresenter, IListeningTrainingPresenter
         view.display(text: meaning.text, translation: meaning.translation, imageData: meaning.imageData)
         view.displaySkipAlert()
         playWrongSound()
+    }
+    
+    func presentMeaningSound(meaning: Meaning) {
+        if let soundData = meaning.soundData {
+            playSound(data: soundData)
+        }
     }
     
     func presentFinish() {

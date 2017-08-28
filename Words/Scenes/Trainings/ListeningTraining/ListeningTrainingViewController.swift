@@ -103,6 +103,10 @@ class ListeningTrainingViewController: TrainingViewController, IListeningTrainin
         interactor?.skipMeaning()
     }
     
+    func checkTranslation(text: String?) {
+        interactor.checkTranslation(text: text)
+    }
+    
     func finish() {
         performSegue(withIdentifier: "FinishTraining", sender: self)
     }
@@ -138,7 +142,7 @@ class ListeningTrainingViewController: TrainingViewController, IListeningTrainin
     // MARK: IBActions
     
     @IBAction func checkAction(_ button: UIButton) {
-        interactor.checkTranslation(text: textField.text)
+        checkTranslation(text: textField.text)
     }
     
     @IBAction func nextAction(_ button: UIButton) {
@@ -147,6 +151,10 @@ class ListeningTrainingViewController: TrainingViewController, IListeningTrainin
     
     @IBAction func closeAction(_ button: UIButton) {
         finish()
+    }
+    
+    @IBAction func listenAgain(_ button: UIButton) {
+        interactor.listenAgain()
     }
     
     // MARK: IListeningView
@@ -202,5 +210,14 @@ class ListeningTrainingViewController: TrainingViewController, IListeningTrainin
             let keyboardHeight = keyboardFrame.size.height
             keyboardHeightConstraint.constant = keyboardHeight
         }
+    }
+}
+
+// MARK: UITextField delegate
+
+extension ListeningTrainingViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+        checkTranslation(text: textField.text)
+        return true
     }
 }
