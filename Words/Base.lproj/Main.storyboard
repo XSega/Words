@@ -719,8 +719,8 @@
                                                 <color key="textColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Мать" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fj-TD-BOZ">
-                                                <rect key="frame" x="16" y="63" width="288" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мать" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fj-TD-BOZ">
+                                                <rect key="frame" x="16" y="56" width="288" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="6FQ-tP-twS"/>
                                                 </constraints>
@@ -830,14 +830,14 @@
                         <viewControllerLayoutGuide type="bottom" id="zK1-mT-Tex"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PSw-gl-FXf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-jC-hRl">
-                                <rect key="frame" x="16" y="8" width="288" height="580"/>
+                                <rect key="frame" x="16" y="8" width="288" height="348"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😢" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="906-gv-1Y9">
-                                        <rect key="frame" x="74" y="213" width="139" height="153"/>
+                                        <rect key="frame" x="74" y="97" width="139" height="153"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="128"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -849,7 +849,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mf-xg-mhp">
-                                <rect key="frame" x="16" y="724" width="288" height="44"/>
+                                <rect key="frame" x="16" y="492" width="288" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.52549019610000003" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ZjW-pU-Wif"/>
@@ -881,7 +881,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1q7-vZ-JKD">
-                                <rect key="frame" x="16" y="596" width="288" height="96"/>
+                                <rect key="frame" x="16" y="364" width="288" height="96"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEe-P4-PLh">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="96"/>
@@ -1227,6 +1227,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZXe-wj-ju3"/>
-        <segue reference="R3C-be-ybN"/>
+        <segue reference="zT3-4H-oW5"/>
     </inferredMetricsTieBreakers>
 </document>
